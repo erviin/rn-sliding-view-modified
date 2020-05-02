@@ -67,7 +67,7 @@ export default class SlidingView extends Component<Props> {
       const { componentVisible, disableDrag, currentPositionY, currentPositionX } = this.props;
 
       const { x, y } = this;
-
+      
       if (currentPositionY) {
         // handles draggable for y
         y.setValue(currentPositionY);
@@ -145,10 +145,10 @@ export default class SlidingView extends Component<Props> {
       newY = minY;
     } else if (newY > maxY) {
       newY = maxY;
-    }else if(newY <= this.props.currentPositionY){
+    } else if (newY <= this.props.currentPositionY) {
       newY = y._value;
     }
-    
+
     y.setValue(newY);
   };
 
@@ -203,7 +203,7 @@ export default class SlidingView extends Component<Props> {
     ) {
       this.animate({
         type: this.y,
-        toValue: 0,
+        toValue: this.props.currentPositionY,
       });
       return setTimeout(changeVisibilityCallback, animationDuration);
     }
