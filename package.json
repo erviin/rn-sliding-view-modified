@@ -57,7 +57,7 @@
     "prettier": "^1.18.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-native": "^0.60.5"
+    "react-native": "^0.62.3"
   },
   "homepage": "https://github.com/DnEgorWeb/rn-sliding-view",
   "jest": {
@@ -94,7 +94,7 @@
   "name": "rn-sliding-view",
   "peerDependencies": {
     "react": "^16.9.0",
-    "react-native": "^0.60.5"
+    "react-native": "^0.62.3"
   },
   "repository": {
     "url": "git+https://github.com/DnEgorWeb/rn-sliding-view.git",
